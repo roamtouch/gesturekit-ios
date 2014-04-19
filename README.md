@@ -16,7 +16,7 @@ Import `GestureKit.h` and instantiate it using your keyWindow and your GestureKi
 
 ```objective-c
 #import "GestureKit.h"
-    ...
+...
 (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 ...
 [GestureKit runInWindow:self.window withGID:@”YOUR_GK_GID”];
@@ -27,27 +27,23 @@ Import `GestureKit.h` and instantiate it using your keyWindow and your GestureKi
 You should declare on your AppDelegate a method with the same name of the defined GestureKit method. For example, you define the "PLAY" action, then you should declare:
 ```objective-c
 (void) PLAY{
-
 ...
-
 }
 ```
 
 ```objective-c
 (void) PLAY:(NSString*) metadata{
-
 ...
-
 }
 ```
 In case you care about the metadata associated to the gesture.
 
 ### Customizing GKVisor [optional].
-GestureKit has a default visor called GestureKitVisor, it's responsible of show GestureKit status as `loading`, `drawing gestures`, `ready` and `warning`.
+GestureKit has a default visor called `GestureKitVisor`, it's responsible of show GestureKit status as `loading`, `drawing gestures`, `ready` and `warning`.
 
 It can be replaced by your own Visor just implementing GK_VisorProtocol and then instantiating the GestureKit object with it’s alternative methods:
 
-```
+```objective-c
 (void) runInWindow:(UIWindow*) window withGID:(NSString*) gid withVisor:(id<GK_VisorProtocol>) visor;
 ```
 
