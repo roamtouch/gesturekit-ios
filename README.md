@@ -14,7 +14,7 @@
 ### Instance a GestureKit object.
 Import `GestureKit.h` and instantiate it using your keyWindow and your GestureKit `GID`. A good place to do this is on you Application Delegate.
 
-```objective-c
+```c
 #import "GestureKit.h"
 ...
 (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -25,7 +25,7 @@ Import `GestureKit.h` and instantiate it using your keyWindow and your GestureKi
 
 ### Setup GestureKit.
 You should declare on your AppDelegate a method with the same name of the defined GestureKit method. For example, you define the "PLAY" action, then you should declare:
-```objective-c
+```c
 (void) PLAY{
 ...
 }
@@ -43,13 +43,13 @@ GestureKit has a default visor called `GestureKitVisor`, it's responsible of sho
 
 It can be replaced by your own Visor just implementing GK_VisorProtocol and then instantiating the GestureKit object with it’s alternative methods:
 
-```objective-c
+```c
 (void) runInWindow:(UIWindow*) window withGID:(NSString*) gid withVisor:(id<GK_VisorProtocol>) visor;
 ```
 
 The protocol is available on “GestureKit.h” and it’s the following:
 
-```objective-c
+```c
 //Protocol for implementing custom visors
 @protocol GK_VisorProtocol <NSObject>
 
