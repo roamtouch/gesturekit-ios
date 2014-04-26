@@ -1,17 +1,26 @@
-# gesturekit-ios
+# iOS Addon
 
-> An iOS static library to recognize advanced gestures on iOS apps.
+An iOS static library to recognize advanced gestures on iOS apps.
+
+***
 
 ## Compatibility
 - Any device that supports iOS 6+
 
+***
+
 ##Usage
-### Import the GestureKit static library into your project.
+
+</br>
+
+### 1- Import the GestureKit static library into your project.
 - Download [URL] unzip it and drag and drop the folder into your project.
 - Select “copy items into…” option. 
 - Add “-ObjC” to “Other linker flags”.
 
-### Instance a GestureKit object.
+</br>
+
+### 2- Instance a GestureKit object.
 Import `GestureKit.h` and instantiate it using your keyWindow and your GestureKit `GID`. A good place to do this is on you Application Delegate.
 
 ```c
@@ -22,8 +31,9 @@ Import `GestureKit.h` and instantiate it using your keyWindow and your GestureKi
 [GestureKit runInWindow:self.window withGID:@”YOUR_GK_GID”];
 }
 ```
+</br>
 
-### Setup GestureKit.
+### 3- Setup GestureKit.
 You should declare on your AppDelegate a method with the same name of the defined GestureKit method. For example, you define the "PLAY" action, then you should declare:
 ```c
 (void) PLAY{
@@ -31,14 +41,16 @@ You should declare on your AppDelegate a method with the same name of the define
 }
 ```
 
-```objective-c
+```c
 (void) PLAY:(NSString*) metadata{
 ...
 }
 ```
 In case you care about the metadata associated to the gesture.
 
-### Customizing GKVisor [optional].
+</br>
+
+### 4- Customizing GKVisor [optional].
 GestureKit has a default visor called `GestureKitVisor`, it's responsible of show GestureKit status as `loading`, `drawing gestures`, `ready` and `warning`.
 
 It can be replaced by your own Visor just implementing GK_VisorProtocol and then instantiating the GestureKit object with it’s alternative methods:
@@ -80,11 +92,11 @@ The protocol is available on “GestureKit.h” and it’s the following:
 - Julio Carrettoni ()
 - Twitter: [@dev_jac](http://twitter.com/dev_jac)
 
-## Credits
+## Credits
 
 <img src="http://www.gesturekit.com/assets/img/roamtouch.png" width="200" alt="RoamTouch logo">
 
-## License
+## License
 Licensed under Apache v2 License.
 
 Copyright (c) 2014 [RoamTouch](http://github.com/RoamTouch).
