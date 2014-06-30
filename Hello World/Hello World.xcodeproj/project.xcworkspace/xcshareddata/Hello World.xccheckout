@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>17D42210-481F-49C4-8B51-8E084B47A551</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Hello World</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>40DCA004-18AB-4DF3-8E65-DED75E3349F4</key>
+		<string>https://roamtouch.unfuddle.com/git/roamtouch_apps/</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>gesturekit/demos/ios/Hello World/Hello World/Hello World.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>40DCA004-18AB-4DF3-8E65-DED75E3349F4</key>
+		<string>../../../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://roamtouch.unfuddle.com/git/roamtouch_apps/</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>40DCA004-18AB-4DF3-8E65-DED75E3349F4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>40DCA004-18AB-4DF3-8E65-DED75E3349F4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>roamtouch_apps</string>
+		</dict>
+	</array>
+</dict>
+</plist>
