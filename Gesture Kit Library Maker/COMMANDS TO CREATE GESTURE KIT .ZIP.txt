@@ -1,0 +1,10 @@
+# Execute this commands on the same folder where the “Release-iphoneos” and
+# the “Release-iphonesimulator” folders are (you create them when you build
+# the protect and they are usually are 
+rm -fr GestureKit
+mkdir GestureKit
+cp -a Release-iphoneos/include GestureKit/include
+lipo -create Release-iphoneos/*.a Release-iphonesimulator/*.a -output GestureKit/libGestureKit.a
+rm -f GestureKit.zip
+find GestureKit -path '*/.*' -prune -o -type f -print | zip GestureKit.zip -@
+

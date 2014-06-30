@@ -1,0 +1,1 @@
+lipo -create libGestureKitDevice.a libGestureKitSimulator.a -output libGestureKit.a
